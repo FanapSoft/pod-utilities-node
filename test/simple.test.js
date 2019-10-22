@@ -119,7 +119,7 @@ describe('toShamsiDateTimeString', function () {
   });
 });
 
-describe.only('trimObject', function () {
+describe('trimObject', function () {
   it('correct', function (done) {
     let result = util.trimObject({
       a: '   a  ',
@@ -135,7 +135,7 @@ describe.only('trimObject', function () {
   });
 });
 
-describe.only('trimNestedObject', function () {
+describe('trimNestedObject', function () {
   it('correct', function (done) {
     let result = util.trimNestedObject({
       a: '   a  ',
@@ -148,6 +148,46 @@ describe.only('trimNestedObject', function () {
     console.log(result);
     expect(result.a).to.equal('a');
     expect(result.c.a).to.equal('10');
+    done();
+  });
+});
+
+describe('dateToStringToMin', function () {
+  it('correct', function (done) {
+    let result = util.dateToStringToMin(new Date());
+    console.log(result);
+    done();
+  });
+});
+
+describe('dateToStringToMinUtc', function () {
+  it('correct', function (done) {
+    let result = util.dateToStringToMinUtc(new Date());
+    console.log(result);
+    done();
+  });
+});
+
+describe('dateToString', function () {
+  it('correct', function (done) {
+    let result = util.dateToString(new Date());
+    console.log(result);
+    done();
+  });
+});
+
+describe('dateToStringUtc', function () {
+  it('correct', function (done) {
+    let result = util.dateToStringUtc(new Date());
+    console.log(result);
+    done();
+  });
+});
+
+describe.only('shamsiToMiladiStringToMin', function () {
+  it('correct', function (done) {
+    let result = util.shamsiToMiladiStringToMin('1398/05/22 17:54');
+    console.log(result);
     done();
   });
 });

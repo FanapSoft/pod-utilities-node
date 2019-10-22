@@ -1,6 +1,6 @@
 {
   "name": "pod-utilities",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "This module contains all the utility functions",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "dependencies": {
     "clone": "~2.1.2",
     "moment-jalaali": "~0.8.3",
-    "pod-ajv": "^1.0.0",
+    "pod-ajv": "^1.2.0",
     "uuid": "~3.3.2"
   },
   "devDependencies": {
